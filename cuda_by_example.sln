@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simple_kernel", "chapter03\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simple_kernel_params", "chapter03\simple_kernel_params\simple_kernel_params.vcxproj", "{16C1A9C9-4AB3-402F-AEE5-E4D4FC3575EE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "enum_gpu", "chapter03\enum_gpu\enum_gpu.vcxproj", "{908DC14C-E5C1-44F2-9E38-2D9F251058DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -29,6 +31,10 @@ Global
 		{16C1A9C9-4AB3-402F-AEE5-E4D4FC3575EE}.Debug|x64.Build.0 = Debug|x64
 		{16C1A9C9-4AB3-402F-AEE5-E4D4FC3575EE}.Release|x64.ActiveCfg = Release|x64
 		{16C1A9C9-4AB3-402F-AEE5-E4D4FC3575EE}.Release|x64.Build.0 = Release|x64
+		{908DC14C-E5C1-44F2-9E38-2D9F251058DC}.Debug|x64.ActiveCfg = Debug|x64
+		{908DC14C-E5C1-44F2-9E38-2D9F251058DC}.Debug|x64.Build.0 = Debug|x64
+		{908DC14C-E5C1-44F2-9E38-2D9F251058DC}.Release|x64.ActiveCfg = Release|x64
+		{908DC14C-E5C1-44F2-9E38-2D9F251058DC}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{F4BCD3ED-62A4-4DCE-91B7-36D81671A938} = {461D34B7-C4B2-4893-9AA4-87CB41BF0356}
 		{B4F55656-6EA8-4027-A770-6FC493C4AB09} = {461D34B7-C4B2-4893-9AA4-87CB41BF0356}
 		{16C1A9C9-4AB3-402F-AEE5-E4D4FC3575EE} = {461D34B7-C4B2-4893-9AA4-87CB41BF0356}
+		{908DC14C-E5C1-44F2-9E38-2D9F251058DC} = {461D34B7-C4B2-4893-9AA4-87CB41BF0356}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8542564D-3DFF-48E0-BA1C-4EB41E8CE8DD}
