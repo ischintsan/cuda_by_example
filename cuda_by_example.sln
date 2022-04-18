@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "add_loop_gpu", "chapter04\a
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "add_loop_cpu", "chapter04\add_loop_cpu\add_loop_cpu.vcxproj", "{766BD344-1AE1-4858-8B7E-6C9BB31D56F3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "julia_cpu", "chapter04\julia_cpu\julia_cpu.vcxproj", "{1D74A784-6361-49A5-9428-8F0E006CA861}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,12 @@ Global
 		{766BD344-1AE1-4858-8B7E-6C9BB31D56F3}.Release|x64.ActiveCfg = Release|x64
 		{766BD344-1AE1-4858-8B7E-6C9BB31D56F3}.Release|x64.Build.0 = Release|x64
 		{766BD344-1AE1-4858-8B7E-6C9BB31D56F3}.Release|x86.ActiveCfg = Release|x64
+		{1D74A784-6361-49A5-9428-8F0E006CA861}.Debug|x64.ActiveCfg = Debug|x64
+		{1D74A784-6361-49A5-9428-8F0E006CA861}.Debug|x64.Build.0 = Debug|x64
+		{1D74A784-6361-49A5-9428-8F0E006CA861}.Debug|x86.ActiveCfg = Debug|x64
+		{1D74A784-6361-49A5-9428-8F0E006CA861}.Release|x64.ActiveCfg = Release|x64
+		{1D74A784-6361-49A5-9428-8F0E006CA861}.Release|x64.Build.0 = Release|x64
+		{1D74A784-6361-49A5-9428-8F0E006CA861}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +91,7 @@ Global
 		{A1DF0E16-13B4-4141-B045-580C9FBCCF90} = {461D34B7-C4B2-4893-9AA4-87CB41BF0356}
 		{08119BD8-6F47-4A03-A62B-0F9A6E49D670} = {6F5B0E3F-68A9-4CA3-BDA5-B1B37381506A}
 		{766BD344-1AE1-4858-8B7E-6C9BB31D56F3} = {6F5B0E3F-68A9-4CA3-BDA5-B1B37381506A}
+		{1D74A784-6361-49A5-9428-8F0E006CA861} = {6F5B0E3F-68A9-4CA3-BDA5-B1B37381506A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8542564D-3DFF-48E0-BA1C-4EB41E8CE8DD}
