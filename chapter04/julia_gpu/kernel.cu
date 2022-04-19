@@ -72,7 +72,7 @@ int main() {
 
     HANDLE_ERROR(cudaMalloc((void**)&dev_ptr, bitmap.image_size()));
 
-    dim3 grid(DIM, DIM);  // 二维线程格(Grid)。dim3表示一个三维数组，在这里第三维其实就是1
+    dim3 grid(DIM, DIM);  // 二维线程格(Grid)。dim3表示一个三维数组，在这里第三维其实就是1，同dim3 grid(DIM, DIM, 1)
     kernel<<<grid, 1>>>(dev_ptr);
 
     HANDLE_ERROR(cudaMemcpy(bitmap.get_ptr(), dev_ptr, bitmap.image_size(), cudaMemcpyDeviceToHost));
