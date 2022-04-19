@@ -25,6 +25,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "julia_cpu", "chapter04\juli
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "julia_gpu", "chapter04\julia_gpu\julia_gpu.vcxproj", "{F125455C-E2EA-43AE-B090-7666982DAE9F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter05", "chapter05", "{1E1F312F-CFB4-415E-A3FD-6B13E6ED40F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "add_loop_blocks", "chapter05\add_loop_blocks\add_loop_blocks.vcxproj", "{16E96159-3108-4CD7-B6A7-980636EE18F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "add_loop_long_blocks", "chapter05\add_loop_long_blocks\add_loop_long_blocks.vcxproj", "{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "add_loop_very_long_blocks", "chapter05\add_loop_very_long_blocks\add_loop_very_long_blocks.vcxproj", "{6013D8A3-9302-4D5E-9573-1FD317129627}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -87,6 +95,24 @@ Global
 		{F125455C-E2EA-43AE-B090-7666982DAE9F}.Release|x64.ActiveCfg = Release|x64
 		{F125455C-E2EA-43AE-B090-7666982DAE9F}.Release|x64.Build.0 = Release|x64
 		{F125455C-E2EA-43AE-B090-7666982DAE9F}.Release|x86.ActiveCfg = Release|x64
+		{16E96159-3108-4CD7-B6A7-980636EE18F2}.Debug|x64.ActiveCfg = Debug|x64
+		{16E96159-3108-4CD7-B6A7-980636EE18F2}.Debug|x64.Build.0 = Debug|x64
+		{16E96159-3108-4CD7-B6A7-980636EE18F2}.Debug|x86.ActiveCfg = Debug|x64
+		{16E96159-3108-4CD7-B6A7-980636EE18F2}.Release|x64.ActiveCfg = Release|x64
+		{16E96159-3108-4CD7-B6A7-980636EE18F2}.Release|x64.Build.0 = Release|x64
+		{16E96159-3108-4CD7-B6A7-980636EE18F2}.Release|x86.ActiveCfg = Release|x64
+		{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF}.Debug|x64.ActiveCfg = Debug|x64
+		{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF}.Debug|x64.Build.0 = Debug|x64
+		{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF}.Debug|x86.ActiveCfg = Debug|x64
+		{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF}.Release|x64.ActiveCfg = Release|x64
+		{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF}.Release|x64.Build.0 = Release|x64
+		{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF}.Release|x86.ActiveCfg = Release|x64
+		{6013D8A3-9302-4D5E-9573-1FD317129627}.Debug|x64.ActiveCfg = Debug|x64
+		{6013D8A3-9302-4D5E-9573-1FD317129627}.Debug|x64.Build.0 = Debug|x64
+		{6013D8A3-9302-4D5E-9573-1FD317129627}.Debug|x86.ActiveCfg = Debug|x64
+		{6013D8A3-9302-4D5E-9573-1FD317129627}.Release|x64.ActiveCfg = Release|x64
+		{6013D8A3-9302-4D5E-9573-1FD317129627}.Release|x64.Build.0 = Release|x64
+		{6013D8A3-9302-4D5E-9573-1FD317129627}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +127,9 @@ Global
 		{766BD344-1AE1-4858-8B7E-6C9BB31D56F3} = {6F5B0E3F-68A9-4CA3-BDA5-B1B37381506A}
 		{1D74A784-6361-49A5-9428-8F0E006CA861} = {6F5B0E3F-68A9-4CA3-BDA5-B1B37381506A}
 		{F125455C-E2EA-43AE-B090-7666982DAE9F} = {6F5B0E3F-68A9-4CA3-BDA5-B1B37381506A}
+		{16E96159-3108-4CD7-B6A7-980636EE18F2} = {1E1F312F-CFB4-415E-A3FD-6B13E6ED40F5}
+		{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF} = {1E1F312F-CFB4-415E-A3FD-6B13E6ED40F5}
+		{6013D8A3-9302-4D5E-9573-1FD317129627} = {1E1F312F-CFB4-415E-A3FD-6B13E6ED40F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8542564D-3DFF-48E0-BA1C-4EB41E8CE8DD}
