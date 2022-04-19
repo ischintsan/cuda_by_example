@@ -45,9 +45,9 @@ int main() {
         printf("%d + %d = %d\n", a[i], b[i], c[i]);
     }
 
-    cudaFree(dev_a);
-    cudaFree(dev_b);
-    cudaFree(dev_c);
+    HANDLE_ERROR(cudaFree(dev_a));
+    HANDLE_ERROR(cudaFree(dev_b));
+    HANDLE_ERROR(cudaFree(dev_c));
 
     return 0;
 }

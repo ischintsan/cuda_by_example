@@ -22,7 +22,7 @@ int main() {
 
 	printf("2 + 7 = %d\n", c);
 	// 最后要释放之前分配的显存
-	cudaFree(dev_c);
+	HANDLE_ERROR(cudaFree(dev_c));
 
 	return 0;
 }

@@ -59,7 +59,7 @@ void kernel(unsigned char* ptr)
     {
         for (int x = 0; x < DIM; x++)
         {
-            int offset = x + y * DIM;
+            int offset = x + y * DIM;  // 像素在内存中的线性偏移，因为图像在内存中实际是一维存储的
 
             int juliaValue = julia(x, y);  // 判断点(x, y)是否属于Julia集合，属于返回1，不属于返回0
             // juliaValue为0时为黑色(0,0,0)，为1时为红色(255,0,0)
