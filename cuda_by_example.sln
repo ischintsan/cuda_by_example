@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "add_loop_long_blocks", "cha
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "add_loop_very_long_blocks", "chapter05\add_loop_very_long_blocks\add_loop_very_long_blocks.vcxproj", "{6013D8A3-9302-4D5E-9573-1FD317129627}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ripple", "chapter05\ripple\ripple.vcxproj", "{CE05F904-0C32-43AF-8316-033E313B3611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -113,6 +115,12 @@ Global
 		{6013D8A3-9302-4D5E-9573-1FD317129627}.Release|x64.ActiveCfg = Release|x64
 		{6013D8A3-9302-4D5E-9573-1FD317129627}.Release|x64.Build.0 = Release|x64
 		{6013D8A3-9302-4D5E-9573-1FD317129627}.Release|x86.ActiveCfg = Release|x64
+		{CE05F904-0C32-43AF-8316-033E313B3611}.Debug|x64.ActiveCfg = Debug|x64
+		{CE05F904-0C32-43AF-8316-033E313B3611}.Debug|x64.Build.0 = Debug|x64
+		{CE05F904-0C32-43AF-8316-033E313B3611}.Debug|x86.ActiveCfg = Debug|x64
+		{CE05F904-0C32-43AF-8316-033E313B3611}.Release|x64.ActiveCfg = Release|x64
+		{CE05F904-0C32-43AF-8316-033E313B3611}.Release|x64.Build.0 = Release|x64
+		{CE05F904-0C32-43AF-8316-033E313B3611}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +138,7 @@ Global
 		{16E96159-3108-4CD7-B6A7-980636EE18F2} = {1E1F312F-CFB4-415E-A3FD-6B13E6ED40F5}
 		{89AEDD70-9655-4798-B7D3-1D7D7ED6FFDF} = {1E1F312F-CFB4-415E-A3FD-6B13E6ED40F5}
 		{6013D8A3-9302-4D5E-9573-1FD317129627} = {1E1F312F-CFB4-415E-A3FD-6B13E6ED40F5}
+		{CE05F904-0C32-43AF-8316-033E313B3611} = {1E1F312F-CFB4-415E-A3FD-6B13E6ED40F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8542564D-3DFF-48E0-BA1C-4EB41E8CE8DD}
