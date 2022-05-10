@@ -68,7 +68,7 @@ int main() {
     cudaEvent_t start, stop;
     HANDLE_ERROR(cudaEventCreate(&start));  // 创建一个事件
     HANDLE_ERROR(cudaEventCreate(&stop));
-    HANDLE_ERROR(cudaEventRecord(start, 0));
+    HANDLE_ERROR(cudaEventRecord(start, 0));  // 记录一个事件
 
     HANDLE_ERROR(cudaMalloc((void**)&dev_ptr, bitmap.image_size()));
     HANDLE_ERROR(cudaMalloc((void**)&dev_s, SPHERES * sizeof(Sphere)));
@@ -88,7 +88,7 @@ int main() {
 
     dim3 blocks(DIM / 16, DIM / 16);
     dim3 threads(16, 16);
-    kernel << <blocks, threads >> > (dev_s, dev_ptr);
+    kernel<<<blocks, threads>>>(dev_s, dev_ptr);
 
     HANDLE_ERROR(cudaMemcpy(bitmap.get_ptr(), dev_ptr,
         bitmap.image_size(),

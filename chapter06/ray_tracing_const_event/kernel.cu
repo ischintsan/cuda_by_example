@@ -71,7 +71,7 @@ int main() {
     cudaEvent_t start, stop;
     HANDLE_ERROR(cudaEventCreate(&start));  // 创建一个事件
     HANDLE_ERROR(cudaEventCreate(&stop));
-    HANDLE_ERROR(cudaEventRecord(start, 0));
+    HANDLE_ERROR(cudaEventRecord(start, 0));  // 记录一个事件
 
 
     HANDLE_ERROR(cudaMalloc((void**)&dev_ptr, bitmap.image_size()));
