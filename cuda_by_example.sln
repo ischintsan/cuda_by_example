@@ -65,6 +65,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hist_gpu_gmem_atomics", "ch
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hist_gpu_shmem_atomics", "chapter09\hist_gpu_shmem_atomics\hist_gpu_shmem_atomics.vcxproj", "{DE95091C-BEC8-474D-98CD-B4C4B9155568}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter10", "chapter10", "{B75F1DF0-3F38-46F7-9B4B-2D9ACEBDF339}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "copy_timed", "chapter10\copy_timed\copy_timed.vcxproj", "{BC153735-B90B-4365-9B4E-5C286D2DA6C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -223,6 +227,12 @@ Global
 		{DE95091C-BEC8-474D-98CD-B4C4B9155568}.Release|x64.ActiveCfg = Release|x64
 		{DE95091C-BEC8-474D-98CD-B4C4B9155568}.Release|x64.Build.0 = Release|x64
 		{DE95091C-BEC8-474D-98CD-B4C4B9155568}.Release|x86.ActiveCfg = Release|x64
+		{BC153735-B90B-4365-9B4E-5C286D2DA6C4}.Debug|x64.ActiveCfg = Debug|x64
+		{BC153735-B90B-4365-9B4E-5C286D2DA6C4}.Debug|x64.Build.0 = Debug|x64
+		{BC153735-B90B-4365-9B4E-5C286D2DA6C4}.Debug|x86.ActiveCfg = Debug|x64
+		{BC153735-B90B-4365-9B4E-5C286D2DA6C4}.Release|x64.ActiveCfg = Release|x64
+		{BC153735-B90B-4365-9B4E-5C286D2DA6C4}.Release|x64.Build.0 = Release|x64
+		{BC153735-B90B-4365-9B4E-5C286D2DA6C4}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -253,6 +263,7 @@ Global
 		{77C5C784-74B5-4661-B9D0-8160F650B4F6} = {6728F252-D68C-4574-85C3-7582F0959D3A}
 		{3A89BDEE-9D6E-4AFE-B8B9-315147BDED34} = {6728F252-D68C-4574-85C3-7582F0959D3A}
 		{DE95091C-BEC8-474D-98CD-B4C4B9155568} = {6728F252-D68C-4574-85C3-7582F0959D3A}
+		{BC153735-B90B-4365-9B4E-5C286D2DA6C4} = {B75F1DF0-3F38-46F7-9B4B-2D9ACEBDF339}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8542564D-3DFF-48E0-BA1C-4EB41E8CE8DD}
