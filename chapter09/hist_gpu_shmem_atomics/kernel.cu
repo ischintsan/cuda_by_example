@@ -48,7 +48,7 @@ int main() {
     cudaDeviceProp prop;
     HANDLE_ERROR(cudaGetDeviceProperties(&prop, 0));
     int blocks = prop.multiProcessorCount * 2; // 将Block的数量设置为GPU中处理器数量的2倍
-    histo_kernel << <blocks, 256 >> > (dev_buffer, SIZE, dev_histo);
+    histo_kernel<<<blocks, 256>>>(dev_buffer, SIZE, dev_histo);
 
     unsigned int histo[256];
     HANDLE_ERROR(cudaMemcpy(histo, dev_histo, 256 * sizeof(int), cudaMemcpyDeviceToHost));
