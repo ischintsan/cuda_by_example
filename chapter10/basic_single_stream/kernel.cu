@@ -73,34 +73,35 @@ int main() {
         // 将Page-Locked Memory以异步方式复制到Device上
         // 第一次复制
         HANDLE_ERROR(cudaMemcpyAsync(dev_a, 
-                                host_a + offset,			// 加上一个偏移offset
-                                N * sizeof(int), 
-                                cudaMemcpyHostToDevice,
-                                stream));					// 在这个stream中进行复制
+                                     host_a + offset,			// 加上一个偏移offset
+                                     N * sizeof(int), 
+                                     cudaMemcpyHostToDevice,
+                                     stream));					// 在这个stream中进行复制
         // 第二次复制
         HANDLE_ERROR(cudaMemcpyAsync(dev_b,
-                                host_b + offset, 
-                                N * sizeof(int),
-                                cudaMemcpyHostToDevice,
-                                stream));
+                                     host_b + offset, 
+                                     N * sizeof(int),
+                                     cudaMemcpyHostToDevice,
+                                     stream));
 
         kernel<<<N / 256, 256>>>(dev_a, dev_b, dev_c);
         
         // 第三次复制
         // 将数据从Device复制到Page-Locked Memory
         HANDLE_ERROR(cudaMemcpyAsync(host_c + offset,
-                                dev_c,
-                                N * sizeof(int),
-                                cudaMemcpyDeviceToHost,
-                                stream));
+                                     dev_c,
+                                     N * sizeof(int),
+                                     cudaMemcpyDeviceToHost,
+                                     stream));
     }
 
-    // 将计算结果从页锁定内存复制到主机内存
+    // 对流进行同步
     HANDLE_ERROR(cudaStreamSynchronize(stream));
 
     HANDLE_ERROR(cudaEventRecord(end, 0));
     HANDLE_ERROR(cudaEventSynchronize(end));
     HANDLE_ERROR(cudaEventElapsedTime(&elapsedTime, start, end));
+    printf("Time taken: %3.1f ms\n", elapsedTime);
 
     HANDLE_ERROR(cudaFreeHost(host_a));
     HANDLE_ERROR(cudaFreeHost(host_b));
