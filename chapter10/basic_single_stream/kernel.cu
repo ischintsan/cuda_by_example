@@ -10,13 +10,13 @@
 #define FULL_DATA_SIZE (N*20)
 
 __global__ void kernel(int* a, int* b, int* c) {
-    int tid = blockIdx.x * blockDim.x + threadIdx.x;
-    if (tid < N) {
-        int tid1 = (tid + 1) % 256;
-        int tid2 = (tid + 2) % 256;
-        float as = (a[tid] + a[tid1] + a[tid2]) / 3.0f;
-        float bs = (b[tid] + b[tid1] + b[tid2]) / 3.0f;
-        c[tid] = (as + bs) / 2;
+    int id = blockIdx.x * blockDim.x + threadIdx.x;
+    if (id < N) {
+        int id1 = (id + 1) % 256;
+        int id2 = (id + 2) % 256;
+        float as = (a[id] + a[id1] + a[id2]) / 3.0f;
+        float bs = (b[id] + b[id1] + b[id2]) / 3.0f;
+        c[id] = (as + bs) / 2;
     }
 }
 
