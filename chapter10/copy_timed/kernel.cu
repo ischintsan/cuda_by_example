@@ -54,7 +54,7 @@ float cuda_host_alloc_test(int size, bool up) {
     HANDLE_ERROR(cudaEventCreate(&end));
 
     // 分配主机缓冲区和GPU缓冲区
-    HANDLE_ERROR(cudaHostAlloc((void**)&a, size * sizeof(*dev_a), cudaHostAllocDefault));  // 使用cudaHostAlloc()来分配固定内存
+    HANDLE_ERROR(cudaHostAlloc((void**)&a, size * sizeof(int), cudaHostAllocDefault));  // 使用cudaHostAlloc()来分配固定内存
     HANDLE_NULL(a);
     HANDLE_ERROR(cudaMalloc((void**)&dev_a, size * sizeof(int)));
 
